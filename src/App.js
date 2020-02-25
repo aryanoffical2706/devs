@@ -115,9 +115,19 @@ function App() {
 				<Row>
 					{getContactExpertView("Talk to a specialist", "FIND AN EXPERT")}
 					{getContactExpertView("Try it now", "FREE TRIAL")}
-					{getContactExpertView("Get pricing", "CONTACT SALES")}
+					{getContactExpertView("Get pricing", "FIND AN EXPERT")}
 				</Row>
 			</div>
+
+			<div style={{ backgroundColor: "#D9D9D9", padding: "32px" }}>
+				<div style={{ color: "#259FDA", fontSize: "32px" }}>
+					INNOVATING WITH A DIGITAL MINDSET
+				</div>
+				<div style={{ fontSize: "24px" }}>
+					Bytemonk provides innovative solutions for small and medium businesses to protect from data breach which happens from within the organization.<br/><br/>The Insider Threat Action platform combines advanced machine learning technology and business processes, enabling small and medium businesses to move from passive detection to active data theft protection.
+				</div>
+			</div>
+
     </div>
   );
 
@@ -126,10 +136,10 @@ function App() {
 function getContactExpertView(headingText, buttonText) {
 	return (
 		<Col style={{ display: "flex", flexDirection: "column", alignContent: "center" }}>
-			<div style={{ fontSize: "24px", textAlign: "center" }}>
+			<div style={{ fontSize: "32px", textAlign: "center" }}>
 				{headingText}
 			</div>
-			<Button style={{ width: "240px", alignSelf: "center" }}>
+			<Button style={{ width: "240px", alignSelf: "center", marginTop: "16px" }}>
 				{buttonText}
 			</Button>
 		</Col>

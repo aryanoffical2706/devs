@@ -113,14 +113,9 @@ function App() {
 					Ready to learn more?
 				</div>
 				<Row>
-					<Col>
-						<div style={{ fontSize: "24px", textAlign: "center" }}>
-							Talk to a specialist
-						</div>
-						<Button style={{ width: "240px" }}>
-							FIND AN EXPERT
-						</Button>
-					</Col>
+					{getContactExpertView("Talk to a specialist", "FIND AN EXPERT")}
+					{getContactExpertView("Try it now", "FREE TRIAL")}
+					{getContactExpertView("Get pricing", "CONTACT SALES")}
 				</Row>
 			</div>
     </div>
@@ -130,11 +125,11 @@ function App() {
 
 function getContactExpertView(headingText, buttonText) {
 	return (
-		<Col>
+		<Col style={{ display: "flex", flexDirection: "column", alignContent: "center" }}>
 			<div style={{ fontSize: "24px", textAlign: "center" }}>
 				{headingText}
 			</div>
-			<Button style={{ width: "240px" }}>
+			<Button style={{ width: "240px", alignSelf: "center" }}>
 				{buttonText}
 			</Button>
 		</Col>

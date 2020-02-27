@@ -19,12 +19,15 @@ import bm_cloud_data_protection from "./images/bm_cloud_data_protection.png";
 import bm_user_activity_monitoring from "./images/bm_user_activity_monitoring.png";
 import bm_it_access_management from "./images/bm_it_access_management.png";
 import bm_automated_data_backup from "./images/bm_automated_data_backup.png";
+import bm_sales_email from "./images/bm_sales_email.png";
+import bm_sales_phone from "./images/bm_sales_phone.png";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Form from "react-bootstrap/Form";
 
 function App() {
   return (
@@ -32,22 +35,22 @@ function App() {
 			<div style={styles.headerLayout}>
 				<img src={bytemonk_logo} style={{ height: "24px", paddingLeft: "8px" }} />
 				<div style={{ display: "flex", flexDirection: "row", paddingRight: "4px" }}>
-					<a href="" style={styles.headerButton}>FREE TRIALS</a>
+					<a href="#learn_more" style={styles.headerButton}>FREE TRIALS</a>
 					|
-					<a href="" style={styles.headerButton}>GET PRICING</a>
+					<a href="#learn_more" style={styles.headerButton}>GET PRICING</a>
 					|
-					<a href="" style={styles.headerButton}>CONTACT US</a>
+					<a href="#learn_more" style={styles.headerButton}>CONTACT US</a>
 				</div>
 			</div>
 
 			<div style={styles.navLayout}>
-				<a href="" style={styles.navButton}>HOME</a>
-				<a href="" style={styles.navButton}>CHALLENGES</a>
-				<a href="" style={styles.navButton}>SOLUTIONS</a>
-				<a href="" style={styles.navButton}>ABOUT US</a>
+				<a href="#home" style={styles.navButton}>HOME</a>
+				<a href="#challenges" style={styles.navButton}>CHALLENGES</a>
+				<a href="#solutions" style={styles.navButton}>SOLUTIONS</a>
+				<a href="#about_us" style={styles.navButton}>ABOUT US</a>
 			</div>
 
-			<div style={{ marginTop: "64px" }}>
+			<div style={{ marginTop: "64px" }} id="home">
 				<Carousel interval={300000} controls={false}>
 					{getCarouselItem(0, "black", "PROVIDING LASER-FOCUSSED DATA SECURITY", "Bytemonk provides laser-focussed security, regulatory compliance, and practical solutions tailored to your organization's needs - all from a partner you can trust", bm_carousel_01)}
 					{getCarouselItem(1, "#26272C", "ADDRESSING THE DATA SECURITY THREATS SUAVELY", "Bytemonk addresses the threate vectors originating from inside the organization by stopping critical data from leaving your organization and helps identify both malicious & negligent users.", bm_carousel_02)}
@@ -56,7 +59,7 @@ function App() {
 				</Carousel>
 			</div>
 
-			<div style={{ margin: "32px" }}>
+			<div style={{ margin: "32px" }} id="challenges">
 				<div style={{ fontSize: "48px" }}>
 					Data Theft is an increasingly powerful and growing threat
 				</div>
@@ -77,7 +80,7 @@ function App() {
 				</div>
 			</div>
 
-			<div style={{ padding: "32px", backgroundColor: "#D0CECE" }}>
+			<div style={{ padding: "32px", backgroundColor: "#D0CECE" }} id="solutions">
 				<div style={{ color: "#190061", fontSize: "48px", textAlign: "center" }}>
 					Secure Data with Bytemonk Insider Threat Detection and Response Program
 				</div>
@@ -105,10 +108,9 @@ function App() {
 						</Card.Body>
 					</Card>
 				</div>
-
 			</div>
 
-			<div style={{ backgroundColor: "#259FDA", padding: "32px" }}>
+			<div style={{ backgroundColor: "#259FDA", padding: "32px" }} id="learn_more">
 				<div style={{ color: "white", fontSize: "32px", textAlign: "center" }}>
 					Ready to learn more?
 				</div>
@@ -128,9 +130,149 @@ function App() {
 				</div>
 			</div>
 
+		<div style={{ backgroundColor: "black", paddingTop: "32px", paddingBottom: "32px", paddingLeft: "16px", paddingRight: "16px" }}>
+			<div style={{ marginLeft: "16px", fontSize: "32px", color: "#729FCF" }}>
+				OUR DIFFERENTIATORS
+			</div>
+			<Row>
+				{getDifferntiators("Easy to Use", "The Bytemonk platform is designed to be simple to use, quick to deploy, and easy to maintain. Requiring no special training for users, the system can be set up in minutes.")}
+				{getDifferntiators("Purpose built", "As Bytemonk solutions are designed for small and medium businesses, the pre-packaged set of offerings are integrated, modular, and cost-effective, enabling quicker deployment")}
+				{getDifferntiators("Centralized reporting", "Bytemonk has just one dashboard for reporting and analytics, thereby, combining activities such as sensitive data protection, risky users and activities monitoring, and recovering business data – all happens from one centralized console.")}
+			</Row>
+			<Row>
+				{getDifferntiators("Pre-built configurations", "Bytemonk has wide set of out-of-the-box policy rules created just for the Indian market. Coupled with advance machine learning technologies, Bytemonk platform delivers unmatched data leak discovery.")}
+				{getDifferntiators("Regulatory compliance", "Bytemonk solutions help automate the compliance process by locating the sensitive data in the network and by putting in place a robust protection mechanism.")}
+				{getDifferntiators("Lower TCO", "Bytemonk solutions are affordable for small and medium businesses. Harnessing cloud delivery model, businesses can save on additional hardware investment.")}
+			</Row>
+		</div>
+
+			<div style={{ backgroundColor: "#D9D9D9", padding: "32px" }} id="about_us">
+				<Row>
+					<Col>
+						<div style={{ color: "#729FCF", fontSize: "24px" }}>
+							Get in touch
+						</div>
+						<div style={{ color: "black", fontSize: "18px", marginTop: "16px" }}>
+							If you're searching for a new partner, we want to hear from you! Fill out this form, and one of our team members will contact you shortly. You can also find our direct contact information here.
+						</div>
+						<div style={{ color: "#729FCF", fontSize: "24px" }}>
+							Contact Information
+						</div>
+						<div style={{ color: "black", marginTop: "16px" }}>
+							<Row>
+								<Col>
+									<div>
+										US OFFICE
+									</div>
+									<div>
+										10909 Eastridge Dr NE<br/>Redmond, WA 98503
+									</div>
+								</Col>
+								<Col>
+									<div>
+										INDIA OFFICE
+									</div>
+									<div>
+										A3-801, Tuscan Estate<br/>Kharadi, Pune
+									</div>
+								</Col>
+							</Row>
+						</div>
+					</Col>
+					<Col>
+						<div style={{ backgroundColor: "white", paddingTop: "16px", paddingBottom: "16px", paddingLeft: "32px", paddingRight: "32px" }}>
+							<div style={{ color: "#729FCF", fontSize: "24px", display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+								Contact
+								<div style={{ fontSize: "15px", color: "black" }}>
+									*All fields are required
+								</div>
+							</div>
+							<Form>
+								<Row style={{ marginTop: "16px" }}>
+									<Col>
+										<Form.Control required placeholder="First Name" style={styles.contactSubmissionFormControl}/>
+									</Col>
+									<Col>
+										<Form.Control required placeholder="Last Name" style={styles.contactSubmissionFormControl}/>
+									</Col>
+								</Row>
+								<Row style={{ marginTop: "16px" }}>
+									<Col>
+										<Form.Control required placeholder="Email" type="email" style={styles.contactSubmissionFormControl}/>
+									</Col>
+									<Col>
+										<Form.Control required placeholder="Phone" style={styles.contactSubmissionFormControl}/>
+									</Col>
+								</Row>
+								<Row style={{ marginTop: "16px" }}>
+									<Col>
+										<Form.Control required placeholder="Company" style={styles.contactSubmissionFormControl}/>
+									</Col>
+									<Col>
+										<Form.Control required placeholder="Country" style={styles.contactSubmissionFormControl}/>
+									</Col>
+								</Row>
+								<Row style={{ marginTop: "16px" }}>
+									<Col>
+										<Form.Control required placeholder="Message" style={styles.contactSubmissionFormControl}/>
+									</Col>
+								</Row>
+								<Button style={{ backgroundColor: "#0070C0", width: "160px", marginTop: "16px" }} type="submit">
+									Submit
+								</Button>
+							</Form>
+						</div>
+					</Col>
+				</Row>
+			</div>
+
+			<div style={{ backgroundColor: "#259FDA", paddingTop: "16px", paddingBottom: "16px" }}>
+				<Row>
+					{getContactPanel(bm_sales_email, "sales@bytemonk.co")}
+					{getContactPanel(bm_sales_phone, "+91-98220-29679")}
+				</Row>
+			</div>
+
+			<div style={{ backgroundColor: "black", padding: "16px", display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+				<div style={{ paddingLeft: "16px" }}>
+					<div style={{ color: "white", fontSize: "18px" }}>
+						© 2020 Bytemonk  |
+						<a href="" style={{ textDecoration: "none", color: "white" }}>{"    Privacy Policy    "}</a>
+						|
+						<a href="" style={{ textDecoration: "none", color: "white" }}>{"    Terms of Services    "}</a>
+					</div>
+				</div>
+			</div>
+
     </div>
   );
 
+}
+
+function getContactPanel(srcImage, contactText) {
+	return (
+		<Col>
+			<div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignConten: "center" }}>
+				<Image src={srcImage} style={{ width: "80px", height: "80px" }}/>
+				<div style={{ fontSize: "18px", alignSelf: "center", marginLeft: "16px" }}>
+					{contactText}
+				</div>
+			</div>
+		</Col>
+	);
+}
+
+function getDifferntiators(headerText, bodyText) {
+	return (
+		<Col style={{ padding: "32px", borderColor: "grey", borderWidth: "1px", borderStyle: "dotted" }}>
+			<div style={{ fontSize: "24px", color: "white" }}>
+					{headerText}
+			</div>
+			<div style={{ marginTop: "16px", color: "#0584AB" }}>
+				{bodyText}
+			</div>
+		</Col>
+	);
 }
 
 function getContactExpertView(headingText, buttonText) {
@@ -179,7 +321,7 @@ function getPlatformFeaturesCard(headerBackground, headerText, bodyText) {
 
 function getFeatureCards(imgSrc, title, body) {
 	return (
-		<Col>
+		<Col style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
 			<Card style={{ height: "400px", alignItems: "center", padding: "32px", width: "280px" }}>
 				<Card.Img style={{ height: "72px", width: "72px" }} variant="top" src={imgSrc}/>
 				<Card.Title style={{ fontSize: "24px", color: "#38ACEC", textAlign: "center", marginTop: "16px" }}>{title}</Card.Title>
@@ -208,9 +350,10 @@ const styles = {
 	headerButton: { paddingLeft: "4px", paddingRight: "4px", textDecoration: "none" },
 	navButton: { paddingLeft: "8px", paddingRight: "8px", textDecoration: "none", color: "white" },
 	navLayout: { position: "fixed", top: "32px", paddingTop: "4px", paddingBottom: "4px", paddingRight: "8px", display: "flex", flexDirection: "row", justifyContent: "flex-end", alignItems: "center", height: "32px", width: "100%", backgroundColor: "#38ACEC", zIndex: "1" },
-	carouselTextLayout: { width: "40%", display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContents: "flex-start", marginLeft: "32px" },
+	carouselTextLayout: { width: "40%", display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "flex-start", marginLeft: "32px" },
 	carouselTextHeading: { color: "white", fontSize: "32px" },
 	carouselTextBody: { color: "white", marginTop: "8px", fontSize: "24px" },
+	contactSubmissionFormControl: { backgroundColor: "#F2F2F2" }
 }
 
 export default App;

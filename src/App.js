@@ -19,6 +19,7 @@ import bm_cloud_data_protection from "./images/bm_cloud_data_protection.png";
 import bm_user_activity_monitoring from "./images/bm_user_activity_monitoring.png";
 import bm_it_access_management from "./images/bm_it_access_management.png";
 import bm_automated_data_backup from "./images/bm_automated_data_backup.png";
+import bm_backup_icon from "./images/bm_backup_icon.svg";
 import bm_sales_email from "./images/bm_sales_email.png";
 import bm_sales_phone from "./images/bm_sales_phone.png";
 import Carousel from "react-bootstrap/Carousel";
@@ -34,12 +35,12 @@ function App() {
     <div style={{display: "flex", flexDirection: "column", backgroundColor: "white"}}>
 			<div style={styles.headerLayout}>
 				<img src={bytemonk_logo} style={{ height: "24px", paddingLeft: "8px" }} />
-				<div style={{ display: "flex", flexDirection: "row", paddingRight: "4px" }}>
-					<a href="#learn_more" style={styles.headerButton}>FREE TRIALS</a>
+				<div style={{ display: "flex", flexDirection: "row", paddingRight: "8px" }}>
+					<a href="#learn_more" style={styles.headerButton}>FREE TRIALS&nbsp;&nbsp;</a>
 					|
-					<a href="#learn_more" style={styles.headerButton}>GET PRICING</a>
+					<a href="#learn_more" style={styles.headerButton}>&nbsp;&nbsp;GET PRICING&nbsp;&nbsp;</a>
 					|
-					<a href="#learn_more" style={styles.headerButton}>CONTACT US</a>
+					<a href="#learn_more" style={styles.headerButton}>&nbsp;&nbsp;CONTACT US</a>
 				</div>
 			</div>
 
@@ -50,7 +51,7 @@ function App() {
 				<a href="#about_us" style={styles.navButton}>ABOUT US</a>
 			</div>
 
-			<div style={{ marginTop: "64px" }} id="home">
+			<div style={{ marginTop: "80px" }} id="home">
 				<Carousel interval={10000} controls={false}>
 					{getCarouselItem(0, "black", "PROVIDING LASER-FOCUSSED DATA SECURITY", "Bytemonk provides laser-focussed security, regulatory compliance, and practical solutions tailored to your organization's needs - all from a partner you can trust.", bm_carousel_01)}
 					{getCarouselItem(1, "#26272C", "ADDRESSING THE DATA SECURITY THREATS SUAVELY", "Bytemonk addresses the threat vectors originating from inside the organization by stopping critical data from leaving your organization and helps identify both malicious & negligent users.", bm_carousel_02)}
@@ -84,7 +85,7 @@ function App() {
 				<div style={{ color: "#002060", fontSize: "48px", textAlign: "center" }}>
 					Secure Data with Bytemonk Insider Threat Detection and Response Program
 				</div>
-				<div style={{ padding: "32px", backgroundColor: "#E7E6E6", marginTop: "16px" }}>
+				<div style={{ padding: "32px", backgroundColor: "#E7E6E6", marginTop: "32px" }}>
 					<div style={{ fontSize: "48px", color: "#0070c0" }}>
 						Insider Threat Action Platform
 					</div>
@@ -103,7 +104,7 @@ function App() {
 								{getAdditionalFeaturesView(bm_cloud_data_protection, "Cloud Data Protection", "Extend your security to cloud applications like Microsoft Office 365, Google G Suite, and more.")}
 								{getAdditionalFeaturesView(bm_user_activity_monitoring, "User Activity Monitoring (UAM)", "Stop malware, phishing attacks, and viruses from spreading via an infected website to organization's network.")}
 								{getAdditionalFeaturesView(bm_it_access_management, "IT Asset Management", "Identify and plug system vulnerabilities arising due to firewall, antivirus and more.")}
-								{getAdditionalFeaturesView(bm_automated_data_backup, "Automated Data Backup", "Create a policy-driven backup plan, monitor the status of on-going backups, and find/restore backups.")}
+								{getAdditionalFeaturesView(bm_backup_icon, "Automated Data Backup", "Create a policy-driven backup plan, monitor the status of on-going backups, and find/restore backups.")}
 							</Row>
 						</Card.Body>
 					</Card>
@@ -117,7 +118,7 @@ function App() {
 				<Row>
 					{getContactExpertView("Talk to a specialist", "FIND AN EXPERT")}
 					{getContactExpertView("Try it now", "FREE TRIAL")}
-					{getContactExpertView("Get pricing", "FIND AN EXPERT")}
+					{getContactExpertView("Get pricing", "CONTACT SALES")}
 				</Row>
 			</div>
 
@@ -131,31 +132,31 @@ function App() {
 			</div>
 
 		<div style={{ backgroundColor: "black", paddingTop: "32px", paddingBottom: "32px", paddingLeft: "16px", paddingRight: "16px" }}>
-			<div style={{ marginLeft: "16px", fontSize: "32px", color: "#00b0f0" }}>
+			<div style={{ marginLeft: "16px", marginBottom: "16px", fontSize: "32px", color: "#00b0f0", textAlign: "center" }}>
 				OUR DIFFERENTIATORS
 			</div>
 			<Row>
-				{getDifferntiators("Easy to Use", "The Bytemonk platform is designed to be simple to use, quick to deploy, and easy to maintain. Requiring no special training for users, the system can be set up in minutes.")}
-				{getDifferntiators("Purpose built", "As Bytemonk solutions are designed for small and medium businesses, the pre-packaged set of offerings are integrated, modular, and cost-effective, enabling quicker deployment.")}
-				{getDifferntiators("Centralized reporting", "Bytemonk has just one dashboard for reporting and analytics; all activities such as sensitive data protection, risky users and activities monitoring, and business data recovery are combined and insights presented on a centralized console.")}
+				{getDifferentiators("Easy to Use", "The Bytemonk platform is designed to be simple to use, quick to deploy, and easy to maintain. Requiring no special training for users, the system can be set up in minutes.", { borderTopWidth: "0px", borderLeftWidth: "0px" })}
+				{getDifferentiators("Purpose built", "As Bytemonk solutions are designed for small and medium businesses, the pre-packaged set of offerings are integrated, modular, and cost-effective, enabling quicker deployment.", { borderTopWidth: "0px" })}
+				{getDifferentiators("Centralized reporting", "Bytemonk has just one dashboard for reporting and analytics; all activities such as sensitive data protection, risky users and activities monitoring, and business data recovery are combined and insights presented on a centralized console.", { borderTopWidth: "0px", borderRightWidth: "0px" })}
 			</Row>
 			<Row>
-				{getDifferntiators("Pre-built configurations", "Bytemonk has wide set of out-of-the-box policy rules created just for the Indian market. Coupled with advance machine learning technologies, Bytemonk platform delivers unmatched data leak discovery.")}
-				{getDifferntiators("Regulatory compliance", "Bytemonk solutions help automate the compliance process by locating the sensitive data in the network and by putting in place a robust protection mechanism.")}
-				{getDifferntiators("Lower TCO", "Bytemonk solutions are affordable for small and medium businesses. Harnessing cloud delivery model, businesses can save on additional hardware investment.")}
+				{getDifferentiators("Pre-built configurations", "Bytemonk has wide set of out-of-the-box policy rules created just for the Indian market. Coupled with advance machine learning technologies, Bytemonk platform delivers unmatched data leak discovery.", { borderLeftWidth: "0px", borderBottomWidth: "0px" })}
+				{getDifferentiators("Regulatory compliance", "Bytemonk solutions help automate the compliance process by locating the sensitive data in the network and by putting in place a robust protection mechanism.", { borderBottomWidth: "0px" })}
+				{getDifferentiators("Lower TCO", "Bytemonk solutions are affordable for small and medium businesses. Harnessing cloud delivery model, businesses can save on additional hardware investment.", { borderBottomWidth: "0px", borderRightWidth: "0px" })}
 			</Row>
 		</div>
 
 			<div style={{ backgroundColor: "#D9D9D9", padding: "32px" }} id="about_us">
 				<Row>
 					<Col>
-						<div style={{ color: "#729FCF", fontSize: "24px" }}>
+						<div style={{ color: "#729FCF", fontSize: "32px" }}>
 							Get in touch
 						</div>
 						<div style={{ color: "black", fontSize: "18px", marginTop: "16px" }}>
 							If you're searching for a new partner in cybersecurity, we want to hear from you! Fill out this form, and one of our team members will contact you shortly. You can also find our direct contact information here.
 						</div>
-						<div style={{ color: "#729FCF", fontSize: "24px" }}>
+						<div style={{ color: "#729FCF", fontSize: "32px", marginTop: "16px" }}>
 							Contact Information
 						</div>
 						<div style={{ color: "black", marginTop: "16px" }}>
@@ -181,7 +182,7 @@ function App() {
 					</Col>
 					<Col>
 						<div style={{ backgroundColor: "white", paddingTop: "16px", paddingBottom: "16px", paddingLeft: "32px", paddingRight: "32px" }}>
-							<div style={{ color: "#729FCF", fontSize: "24px", display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
+							<div style={{ color: "#729FCF", fontSize: "32px", display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
 								Contact
 								<div style={{ fontSize: "15px", color: "black" }}>
 									*All fields are required
@@ -229,17 +230,17 @@ function App() {
 			<div style={{ backgroundColor: "#259FDA", paddingTop: "16px", paddingBottom: "16px" }}>
 				<Row>
 					{getContactPanel(bm_sales_email, "sales@bytemonk.co")}
-					{getContactPanel(bm_sales_phone, "+91-98220-29679")}
+					{getContactPanel(bm_sales_phone, "+91-91759-20040")}
 				</Row>
 			</div>
 
 			<div style={{ backgroundColor: "black", padding: "16px", display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
 				<div style={{ paddingLeft: "16px" }}>
 					<div style={{ color: "white", fontSize: "18px" }}>
-						© 2020 Bytemonk  |
-						<a href="" style={{ textDecoration: "none", color: "white" }}>{"    Privacy Policy    "}</a>
+						© 2020 Bytemonk&nbsp;&nbsp;|
+						<a href="" style={{ textDecoration: "none", color: "white" }}>&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;</a>
 						|
-						<a href="" style={{ textDecoration: "none", color: "white" }}>{"    Terms of Services    "}</a>
+						<a href="" style={{ textDecoration: "none", color: "white" }}>&nbsp;&nbsp;Terms of Services</a>
 					</div>
 				</div>
 			</div>
@@ -262,13 +263,13 @@ function getContactPanel(srcImage, contactText) {
 	);
 }
 
-function getDifferntiators(headerText, bodyText) {
+function getDifferentiators(headerText, bodyText, borderStyle) {
 	return (
-		<Col style={{ padding: "32px", borderColor: "grey", borderWidth: "1px", borderStyle: "dotted" }}>
-			<div style={{ fontSize: "24px", color: "white" }}>
-					{headerText}
+		<Col style={{ padding: "32px", borderColor: "grey", borderWidth: "1px", borderStyle: "dotted", ...borderStyle }}>
+			<div style={{ fontSize: "32px", color: "white" }}>
+				{headerText}
 			</div>
-			<div style={{ marginTop: "16px", color: "#0584AB" }}>
+			<div style={{ marginTop: "24px", color: "#0584AB" }}>
 				{bodyText}
 			</div>
 		</Col>
@@ -281,7 +282,7 @@ function getContactExpertView(headingText, buttonText) {
 			<div style={{ fontSize: "32px", textAlign: "center" }}>
 				{headingText}
 			</div>
-			<Button style={{ width: "240px", alignSelf: "center", marginTop: "16px" }}>
+			<Button style={{ width: "240px", alignSelf: "center", marginTop: "16px", background: "white", color: "black", fontSize: "24px", borderRadius: "8px" }}>
 				{buttonText}
 			</Button>
 		</Col>
@@ -307,11 +308,11 @@ function getAdditionalFeaturesView(imgSrc, headerText, bodyText) {
 function getPlatformFeaturesCard(headerBackground, headerText, bodyText) {
 	return (
 		<Col style={{ alignContent: "center", flexGrow: "0" }}>
-			<Card style={{ width: "320px" }}>
-				<Card.Header style={{ backgroundColor: headerBackground, color: "white", fontSize: "24px", textAlign: "center" }}>
+			<Card style={{ width: "360px", height: "340px" }}>
+				<Card.Header style={{ backgroundColor: headerBackground, color: "white", fontSize: "32px", textAlign: "center" }}>
 					{headerText}
 				</Card.Header>
-				<Card.Text style={{ color: "black", fontSize: "18px", padding: "24px" }}>
+				<Card.Text style={{ color: "black", fontSize: "24px", padding: "24px" }}>
 					{bodyText}
 				</Card.Text>
 			</Card>
@@ -321,11 +322,14 @@ function getPlatformFeaturesCard(headerBackground, headerText, bodyText) {
 
 function getFeatureCards(imgSrc, title, body) {
 	return (
-		<Col style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
-			<Card style={{ height: "400px", alignItems: "center", padding: "32px", width: "280px" }}>
-				<Card.Img style={{ height: "72px", width: "72px" }} variant="top" src={imgSrc}/>
-				<Card.Title style={{ fontSize: "24px", color: "#38ACEC", textAlign: "center", marginTop: "16px" }}>{title}</Card.Title>
-				<Card.Text style={{ fontSize: "16px" }}>{body}</Card.Text>
+		<Col style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+			<div style={{ height: "8px", background: "#0070C0", width: "298px" }} />
+			<Card style={{ padding: "8px", background: "#F2F2F2", borderRadius: "0px" }}>
+				<div style={{ background: "white", height: "400px", width: "280px", alignItems: "center", padding: "32px" }}>
+					<Card.Img style={{ height: "72px", width: "72px" }} variant="top" src={imgSrc}/>
+					<Card.Title style={{ fontSize: "24px", color: "#38ACEC", textAlign: "center", marginTop: "16px" }}>{title}</Card.Title>
+					<Card.Text style={{ fontSize: "16px" }}>{body}</Card.Text>
+				</div>
 			</Card>
 		</Col>
 	);
@@ -338,7 +342,7 @@ function getCarouselItem(key, backgroundColor, heading, body, carouselImage) {
 				<div style={styles.carouselTextLayout}>
 					<div style={styles.carouselTextHeading}>{heading}</div>	
 					<div style={styles.carouselTextBody}>{body}</div>
-					<Button style={{ marginTop: "8px", backgroundColor: "#38ACEC" }}>GET A DEMO</Button>
+					<Button style={styles.carouselButton}>GET A DEMO</Button>
 				</div>
 				<Image src={carouselImage} style={{ width: "60%" }}/>
 			</div>
@@ -346,13 +350,14 @@ function getCarouselItem(key, backgroundColor, heading, body, carouselImage) {
 }
 
 const styles = {
-	headerLayout: { position: "fixed", paddingTop: "4px", paddingBottom: "4px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", height: "32px", width: "100%", backgroundColor: "#F2F2F2", zIndex: "1" },
-	headerButton: { paddingLeft: "4px", paddingRight: "4px", textDecoration: "none" },
-	navButton: { paddingLeft: "8px", paddingRight: "8px", textDecoration: "none", color: "white" },
-	navLayout: { position: "fixed", top: "32px", paddingTop: "4px", paddingBottom: "4px", paddingRight: "8px", display: "flex", flexDirection: "row", justifyContent: "flex-end", alignItems: "center", height: "32px", width: "100%", backgroundColor: "#38ACEC", zIndex: "1" },
+	headerLayout: { position: "fixed", paddingTop: "4px", paddingBottom: "4px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", height: "40px", width: "100%", backgroundColor: "#F2F2F2", zIndex: "1" },
+	headerButton: { paddingLeft: "8px", paddingRight: "8px", textDecoration: "none" },
+	navButton: { marginLeft: "32px", paddingLeft: "8px", paddingRight: "8px", textDecoration: "none", color: "white" },
+	navLayout: { position: "fixed", top: "40px", paddingTop: "4px", paddingBottom: "4px", paddingRight: "8px", display: "flex", flexDirection: "row", justifyContent: "flex-end", alignItems: "center", height: "40px", width: "100%", backgroundColor: "#38ACEC", zIndex: "1" },
 	carouselTextLayout: { width: "40%", display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "flex-start", marginLeft: "32px" },
 	carouselTextHeading: { color: "white", fontSize: "32px" },
-	carouselTextBody: { color: "white", marginTop: "8px", fontSize: "24px" },
+	carouselTextBody: { color: "white", marginTop: "16px", fontSize: "24px" },
+	carouselButton: { marginTop: "24px", backgroundColor: "#38ACEC", fontSize: "20px", paddingLeft: "8px", paddingRight: "8px" },
 	contactSubmissionFormControl: { backgroundColor: "#F2F2F2" }
 }
 

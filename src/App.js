@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import bytemonk_logo from "./images/bytemonk_logo.png";
 import bm_carousel_01 from "./images/bm_carousel_01.jpg";
@@ -18,7 +17,6 @@ import bm_usb_device_control from "./images/bm_usb_device_control.png";
 import bm_cloud_data_protection from "./images/bm_cloud_data_protection.png";
 import bm_user_activity_monitoring from "./images/bm_user_activity_monitoring.png";
 import bm_it_access_management from "./images/bm_it_access_management.png";
-import bm_automated_data_backup from "./images/bm_automated_data_backup.png";
 import bm_backup_icon from "./images/bm_backup_icon.svg";
 import bm_sales_email from "./images/bm_sales_email.png";
 import bm_sales_phone from "./images/bm_sales_phone.png";
@@ -29,6 +27,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
+import ContactSubmissionForm from "./ContactSubmissionForm";
 
 function App() {
   return (
@@ -181,48 +180,7 @@ function App() {
 						</div>
 					</Col>
 					<Col>
-						<div style={{ backgroundColor: "white", paddingTop: "16px", paddingBottom: "16px", paddingLeft: "32px", paddingRight: "32px" }}>
-							<div style={{ color: "#729FCF", fontSize: "32px", display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
-								Contact
-								<div style={{ fontSize: "15px", color: "black" }}>
-									*All fields are required
-								</div>
-							</div>
-							<Form>
-								<Row style={{ marginTop: "16px" }}>
-									<Col>
-										<Form.Control required placeholder="First Name" style={styles.contactSubmissionFormControl}/>
-									</Col>
-									<Col>
-										<Form.Control required placeholder="Last Name" style={styles.contactSubmissionFormControl}/>
-									</Col>
-								</Row>
-								<Row style={{ marginTop: "16px" }}>
-									<Col>
-										<Form.Control required placeholder="Email" type="email" style={styles.contactSubmissionFormControl}/>
-									</Col>
-									<Col>
-										<Form.Control required placeholder="Phone" style={styles.contactSubmissionFormControl}/>
-									</Col>
-								</Row>
-								<Row style={{ marginTop: "16px" }}>
-									<Col>
-										<Form.Control required placeholder="Company" style={styles.contactSubmissionFormControl}/>
-									</Col>
-									<Col>
-										<Form.Control required placeholder="Country" style={styles.contactSubmissionFormControl}/>
-									</Col>
-								</Row>
-								<Row style={{ marginTop: "16px" }}>
-									<Col>
-										<Form.Control required placeholder="Message" style={styles.contactSubmissionFormControl}/>
-									</Col>
-								</Row>
-								<Button style={{ backgroundColor: "#0070C0", width: "160px", marginTop: "16px" }} type="submit">
-									Submit
-								</Button>
-							</Form>
-						</div>
+						<ContactSubmissionForm/>
 					</Col>
 				</Row>
 			</div>
@@ -357,8 +315,7 @@ const styles = {
 	carouselTextLayout: { width: "40%", display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "flex-start", marginLeft: "32px" },
 	carouselTextHeading: { color: "white", fontSize: "32px" },
 	carouselTextBody: { color: "white", marginTop: "16px", fontSize: "24px" },
-	carouselButton: { marginTop: "24px", backgroundColor: "#38ACEC", fontSize: "20px", paddingLeft: "8px", paddingRight: "8px" },
-	contactSubmissionFormControl: { backgroundColor: "#F2F2F2" }
+	carouselButton: { marginTop: "24px", backgroundColor: "#38ACEC", fontSize: "20px", paddingLeft: "8px", paddingRight: "8px" }
 }
 
 export default App;

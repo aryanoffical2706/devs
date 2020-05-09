@@ -4,12 +4,14 @@ export const submitMarketingLeadDetails = (marketingLeadData) =>
 			method: "POST",
 			mode: "cors",
 			headers: {
-				"Content-Type": "application/json"
+				"Content-Type": "application/json",
+				"X_BM_REQUEST_AGENT_ID": "agent-123",
+				"X_BM_REQUEST_ORG_ID": "4fe26103-50a6-4e2a-9bda-24c4ed4149cb"
 			},
 			body: JSON.stringify(marketingLeadData)
 		},
 	).then(results => {
 		return results.json();
-	}).then(data => data).catch((e) => {
+	}).catch((e) => {
 		throw new Error(e);
 	});

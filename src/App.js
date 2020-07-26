@@ -51,7 +51,7 @@ export default class App extends React.Component {
 				</div>
 
 				<div style={{ marginTop: "80px" }} id="home">
-					<Carousel interval={10000} controls={false}>
+					<Carousel interval={5000} controls={false}>
 						{this.getCarouselItem(0, "black", "PROVIDING LASER-FOCUSSED DATA SECURITY", "Bytemonk provides laser-focussed security, regulatory compliance, and practical solutions tailored to your organization's needs - all from a partner you can trust.", bm_carousel_01)}
 						{this.getCarouselItem(1, "#26272C", "ADDRESSING THE DATA SECURITY THREATS SUAVELY", "Bytemonk addresses the threat vectors originating from inside the organization by stopping critical data from leaving your organization and helps identify both malicious & negligent users.", bm_carousel_02)}
 						{this.getCarouselItem(2, "#181F27", "REDUCING ATTACK SURFACE USING AI", "Bytemonk specializes in reducing attack surface by leveraging Machine Learning and AI capabilities that allow computers to learn from examples instead of predefined rules.", bm_carousel_03)}

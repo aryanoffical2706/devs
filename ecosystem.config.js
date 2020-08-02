@@ -1,12 +1,11 @@
 module.exports = {
   apps : [{
     name: 'bm_marketing',
-    script: 'npx',
+    script: 'node serve.js',
     interpreter: 'none',
     port: '8000',
 
     // Options reference: https://pm2.keymetrics.io/docs/usage/application-declaration/
-    args: 'node serve.js',
     autorestart: true,
     watch: false,
     max_memory_restart: '1G',

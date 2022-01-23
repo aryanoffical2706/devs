@@ -195,7 +195,7 @@ export default class App extends React.Component {
 				<div style={{ backgroundColor: "black", padding: "16px", display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
 					<div style={{ paddingLeft: "16px" }}>
 						<div style={{ color: "white", fontSize: "18px" }}>
-							© 2020 Bytemonk&nbsp;&nbsp;|
+							© 2022 Bytemonk&nbsp;&nbsp;|
 								<a href="privacy.html" style={{ textDecoration: "none", color: "white" }}>&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;</a>
 								|
 								<a href="support.html" style={{ textDecoration: "none", color: "white" }}>&nbsp;&nbsp;Terms of Services</a>

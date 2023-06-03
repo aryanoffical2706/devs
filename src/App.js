@@ -35,11 +35,11 @@ export default class App extends React.Component {
 				<div style={styles.headerLayout}>
 					<img src={bytemonk_logo} style={{ height: "24px", paddingLeft: "8px" }} />
 					<div style={{ display: "flex", flexDirection: "row", paddingRight: "8px" }}>
-						<a href="#learn_more" style={styles.headerButton}>FREE TRIALS&nbsp;&nbsp;</a>
+						<a href=".#console" style={styles.headerButton}>FREE TRIALS&nbsp;&nbsp;</a>
 							|
-							<a href="#learn_more" style={styles.headerButton}>&nbsp;&nbsp;GET PRICING&nbsp;&nbsp;</a>
+							<a href=".#console" style={styles.headerButton}>&nbsp;&nbsp;GET PRICING&nbsp;&nbsp;</a>
 							|
-							<a href="#learn_more" style={styles.headerButton}>&nbsp;&nbsp;CONTACT US</a>
+							<a href=".#console" style={styles.headerButton}>&nbsp;&nbsp;CONTACT US</a>
 					</div>
 				</div>
 
@@ -59,11 +59,11 @@ export default class App extends React.Component {
 					</Carousel>
 				</div>
 
-				<div style={{ margin: "32px" }} id="challenges">
-					<div style={{ fontSize: "48px" }}>
-						Data Theft is an increasingly powerful and growing threat
+				<div style={{ margin: "10px" }} id="challenges">
+					<div  style={{ fontSize: "48px" }}>
+						<b>Data Theft is an increasingly powerful and growing threat</b>
 						</div>
-					<div style={{ marginTop: "24px", fontSize: "24px" }}>
+					<div style={{ marginTop: "10px", fontSize: "24px" }}>
 						The main challenges before Small and Medium businesses in protecting business sensitive and confidential data are:
 							<Row style={{ marginTop: "24px" }}>
 							{this.getFeatureCards(bm_user_access, "USER ACCESS", ["Do you know who is accessing your data and when?", <br />, <br />, "Are you suspicious of your new hire who got onboarded from competition?"])}
@@ -81,14 +81,14 @@ export default class App extends React.Component {
 				</div>
 
 				<div style={{ padding: "32px", backgroundColor: "#D0CECE" }} id="solutions">
-					<div style={{ color: "#002060", fontSize: "48px", textAlign: "center" }}>
+					<div style={{ color: "#002060",fontFamily:"Georgia", fontSize: "48px", textAlign: "inline" }}>
 						Secure Data with Bytemonk Insider Threat Detection and Response Program
 						</div>
 					<div style={{ padding: "32px", backgroundColor: "#E7E6E6", marginTop: "32px" }}>
 						<div style={{ fontSize: "48px", color: "#0070c0" }}>
-							Insider Threat Action Platform
+						Bytemonk in<span id="tom">𝐓</span>act platform 
 							</div>
-						<Row style={{ justifyContent: "space-between", marginTop: "16px" }}>
+						<Row style={{  marginTop: "16px" }}>
 							{this.getPlatformFeaturesCard("#00a9d4", "Discover", "Remotely scan specified databases, servers, desktops and laptops, to discover confidential data stored there.")}
 							{this.getPlatformFeaturesCard("#7030A0", "Monitor", "Monitor and identify WHAT customer data is at risk, WHO is using the data in real time, and WHERE this data is going.")}
 							{this.getPlatformFeaturesCard("#F08A00", "Protect", "Mitigate the risks of a breach by stopping the critical data hosted within premises or in the cloud from leaving your organization.")}
@@ -126,7 +126,7 @@ export default class App extends React.Component {
 						INNOVATING WITH A DIGITAL MINDSET
 						</div>
 					<div style={{ fontSize: "24px" }}>
-						Bytemonk provides innovative solutions for small and medium businesses to protect from data breach which happens from within the organization.<br /><br />The Insider Threat Action platform combines advanced machine learning technology and business processes, enabling small and medium businesses to move from passive detection to active data theft protection.
+						Bytemonk provides innovative solutions for small and medium businesses to protect from data breach which happens from within the organization.<br /><br />The Bytemonk intact platform combines advanced machine learning technology and business processes, enabling small and medium businesses to move from passive detection to active data theft protection.
 						</div>
 				</div>
 
@@ -179,7 +179,7 @@ export default class App extends React.Component {
 								</Row>
 							</div>
 						</Col>
-						<Col>
+						<Col id="console">
 							<ContactSubmissionForm />
 						</Col>
 					</Row>
@@ -239,7 +239,7 @@ export default class App extends React.Component {
 					{headingText}
 				</div>
 				<Button style={{ width: "240px", alignSelf: "center", marginTop: "16px", background: "white", color: "black", fontSize: "24px", borderRadius: "8px" }}>
-					{buttonText}
+					<a href=".#console">{buttonText}</a>
 				</Button>
 			</Col>
 		);
@@ -263,8 +263,8 @@ export default class App extends React.Component {
 
 	getPlatformFeaturesCard(headerBackground, headerText, bodyText) {
 		return (
-			<Col style={{ alignContent: "center", flexGrow: "0" }}>
-				<Card style={{ width: "360px", height: "340px" }}>
+			<Col style={{ alignContent: "center", flexGrow: "2" }}>
+				<Card style={{ width: "420px", height: "300px" }}>
 					<Card.Header style={{ backgroundColor: headerBackground, color: "white", fontSize: "32px", textAlign: "center" }}>
 						{headerText}
 					</Card.Header>
@@ -281,7 +281,7 @@ export default class App extends React.Component {
 			<Col style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
 				<div style={{ height: "8px", background: "#0070C0", width: "298px" }} />
 				<Card style={{ padding: "8px", background: "#F2F2F2", borderRadius: "0px" }}>
-					<div style={{ background: "white", height: "400px", width: "280px", alignItems: "center", padding: "32px" }}>
+					<div style={{ background: "white", height: "400px", width: "280px", textAlign:"center",alignItems: "center", padding: "32px" }}>
 						<Card.Img style={{ height: "72px", width: "72px" }} variant="top" src={imgSrc} />
 						<Card.Title style={{ fontSize: "24px", color: "#38ACEC", textAlign: "center", marginTop: "16px" }}>{title}</Card.Title>
 						<Card.Text style={{ fontSize: "16px" }}>{body}</Card.Text>
